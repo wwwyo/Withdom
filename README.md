@@ -1,24 +1,63 @@
-# README
+# ブランチを切る
+- masterを最新状態に
+```ruby
+git pull
+```
+### commit名
+- fix：バグ修正
+- add：新規（ファイル）機能追加
+- update：機能修正（バグではない）
+- remove：削除（ファイル）
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# レビュー
+- rubocopを実行する 
+```ruby
+bundle exec rubocop -a
+```
+- リモートリポジトリへpushする
+- Pull Requestを出す
+- TrelloのカードをPullRequestへ移す
+- 全員からレビューをもらう
+- masterブランチへmergeする
+- Trelloのカードをmergeへ移す
 
-Things you may want to cover:
+# データベース
 
-* Ruby version
+## users table
 
-* System dependencies
+| Column          | Type    | Options     |
+| --------------- | ------- | ----------- |
+| email           | string  | null: false |
+| password        | string  | null: false |
+| nickname        | string  | null: false |
 
-* Configuration
+### Association
 
-* Database creation
+- has_many :categories
+- has_many :shares
 
-* Database initialization
+## categories table
 
-* How to run the test suite
+| Column      | Type       | Options                        |
+| ----------- | ---------- | ------------------------------ |
+| category_id | integer    | null: false                    |
+| user_id     | references | null: false, foreign_key: true |
 
-* Services (job queues, cache servers, search engines, etc.)
+### Association
 
-* Deployment instructions
+- belongs_to :user
+- has_many :shares
 
-* ...
+## shares table
+
+| Column      | Type       | Options                        |
+| ----------- | ---------- | ------------------------------ |
+| share_url   | string     | null: false                    |
+| text        | string     | null: false                    | 
+| user_id     | references | null: false, foreign_key: true |
+| category_id | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :category
