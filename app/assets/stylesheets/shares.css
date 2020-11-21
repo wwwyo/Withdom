@@ -95,6 +95,10 @@ form {
   padding-top: 2%;
 }
 
+.comment-form {
+  padding: 1%;
+}
+
 .category {
   display: flex;
   border-bottom: 1px solid #424242;
