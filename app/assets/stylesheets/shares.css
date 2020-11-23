@@ -1,0 +1,129 @@
+header {
+  height: 10vh;
+  background-color: #424242;
+}
+footer {
+  height: 5vh;
+  background-color: #424242;
+}
+* {
+  color: #424242;
+  font-family: Hiragino Mincho ProN;
+}
+.error {
+  color: #aa213e;
+  font-family: Gulim;
+}
+input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+textarea {
+  border: 1px solid #424242;
+  outline: none;
+  width: 80%;
+  resize: none;
+}
+
+.main {
+  height: 85vh;
+  background-color: #ffffff;
+}
+
+.top-container {
+  height: 20vh;
+  width: 88vw;
+  border-bottom: 1px solid #424242;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3vh;
+}
+
+.top {
+  font-size: 3em;
+  border-bottom: 1px solid #424242;
+  line-height: 90%;
+  padding: 5% 0 0 12vw ;
+  font-weight: lighter;
+}
+
+.form-container {
+  height: 53vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+form {
+  height: 100%;
+  width: 88vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid #424242;
+}
+
+.main-form {
+  width: 50vw;
+  margin-right: 12vw;
+  margin-bottom: 4vh;
+}
+
+.title {
+  display: flex;
+  border-bottom: 1px solid #424242;
+  font-size: 200%;
+}
+
+.title-form {
+  margin-left: 5%;
+}
+
+.url {
+  display: flex;
+  border-bottom: 1px solid #424242;
+  font-size: 90%;
+  padding-top: 2%;
+}
+
+.url-form {
+  margin-left: 5%;
+}
+
+.comment {
+  font-size: 90%;
+  padding-top: 2%;
+}
+
+.comment-form {
+  padding: 1%;
+}
+
+.category {
+  display: flex;
+  border-bottom: 1px solid #424242;
+  font-size: 90%;
+  padding-top: 2%;
+}
+
+.category-form {
+  margin-left: 5%;
+}
+
+.submit-form {
+  margin-bottom: 4vh;
+}
+
+.error-messages {
+  margin-bottom: 10%;
+  font-size: 60%;
+  margin-bottom: 4vh;
+  line-height: 190%;;
+}
+
+.submit {
+  padding: 5% 0;
+  width: 20vw;
+  color: #ffffff;
+  background-color: #424242;
+}
