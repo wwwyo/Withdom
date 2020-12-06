@@ -10,25 +10,20 @@
     <header></header>
     <div class="main">
 
+      <form>
         <div class="name-email">
           <div class="name">
             <img src="../../../assets/images/name.jpg" alt="名前" class="name-image">
             <div class="name-position">
               <div class="name-title">Name</div>
-              <div class="name-message">
-                <label for="name-message">名前を入力してください</label>
-                <!-- <input type="text" class="name-form" name="name" id="name"> -->
-              </div>
+              <input type="text" class="name-form" placeholder="名前を入力してください" name="name" id="name">
             </div>
           </div>
           <div class="email">
             <img src="../../../assets/images/email.jpg" alt="email" class="email-image">
             <div class="email-position">
               <div class="email-title">Email</div>
-              <div class="email-message">
-                <label for="email">＠マークを含む半角文字で入力してください</label>
-                <!-- <input type="text" class="email-form" name="email" id="email"> -->
-              </div>
+              <input type="text" class="email-form" placeholder="＠マークを含む半角文字で入力してください" name="email" id="email">
             </div>
           </div>
         </div>
@@ -38,52 +33,41 @@
             <img src="../../../assets/images/password.jpg" alt="password" class="password-image">
             <div class="password-position">
               <div class="password-title">Password</div>
-              <div class="password-message">
-                <label for="password">６文字以上の半角英数混合で入力してください</label>
-                <!-- <input type="text" class="password-form" name="password" id="password"> -->
-              </div>
+              <input type="text" class="password-form" placeholder="６文字以上の半角英数混合で入力してください" name="password" id="password">
             </div>
           </div>
           <div class="password-comfiramation">
             <img src="../../../assets/images/password.jpg" alt="password" class="password-image">
             <div class="password-comfiramation-position">
               <div class="password-comfiramation-title">Password confiramation</div>
-              <div class="password-comfiramation-message">
-                <label for="password-comfiramation">６文字以上の半角英数混合で入力してください</label>
-                <!-- <input type="text" class="password-form" name="password" id="password"> -->
-              </div>
+              <input type="text" class="password-form" placeholder="６文字以上の半角英数混合で入力してください" name="password" id="password">
             </div>
           </div>
         </div>
+      </form>
 
 
-      <div class="sign-container">
-        <form>
-          <div class="main-form">
-            <div class="signup">
-              <label for="title">SignUp</label>
-               <!-- <input type="text" class="title-form" name="signup" id="signup"> -->
-            </div>
+        <div class="lower">
+          <div class="signs">
+            <div class="signup">SignUp</div>
             <div class="in-top">
               <div class="signin">
-                <label for="url">SignIn</label>
-                <!-- <input type="text" class="url-form" name="signin" id="signin"> -->
+                <p id="session-page"><a href="#" style="text-decoration:none;">SignIn</a></p>
               </div>
               <div class="top">
-                <label for="top">Top</label>
-                <!-- <input type="text" class="top-form" name="top" id="top"> -->
+                <p id="pageTop"><a href="#" style="text-decoration:none;">Top</a></p>
               </div>
             </div>
           </div>
           <div class="error-messages">
             メールアドレスは＠を含む半角英数<br>パスワードは６文字以上の半角英数混合<br>名前を入力してください<br>メールアドレスを入力してください<br>パスワードを入力してください
           </div>
-          <div class="submit-form">
-             <input class="submit" type="submit" value="SignUp"> 
-          </div>
-          
-        </form>
-      </div>
+          <form>
+            <div class="submit-form">
+              <input class="submit" type="submit" value="SignUp"> 
+            </div>
+          </form>
+       </div>
     </div>
     <footer></footer>
   </body>
