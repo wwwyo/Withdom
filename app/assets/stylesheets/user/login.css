@@ -1,0 +1,181 @@
+header {
+  height: 10vh;
+  background-color: #424242;
+}
+footer {
+  height: 5vh;
+  background-color: #424242;
+}
+* {
+  color: #424242;
+  font-family: Hiragino Mincho ProN;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+textarea {
+  border: 1px solid #424242;
+  outline: none;
+  width: 80%;
+  resize: none;
+}
+
+
+.main {
+  height: 85vh;
+  background-color: #ffffff;
+}
+
+
+
+.email-password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15vh 0vh 10vh 0vh;
+}
+
+.email {
+  display: flex;
+  position: relative;
+  margin-right: 4vw;
+}
+
+.email-position {
+  position: absolute;
+  width: 17vw;
+}
+
+.email-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.email-message {
+  display: flex;
+  justify-content: center;
+  font-size: 50%;
+  border-bottom: 1px solid #424242;
+  padding-top: 5%;
+}
+
+.email-image {
+  width: 30vw;
+  height: 15vh;
+} 
+
+
+.password {
+  display: flex;
+  position: relative;
+  margin-left: 4vw;
+}
+
+.password-position {
+  position: absolute;
+  width: 17vw;
+}
+
+.password-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.password-message {
+  display: flex;
+  justify-content: center;
+  font-size: 50%;
+  border-bottom: 1px solid #424242;
+  padding-top: 5%;
+}
+
+.password-image {
+  width: 30vw;
+  height: 15vh;
+}
+
+
+
+.sign-container {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  height: 35vh;
+  width: 88vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.main-form {
+  width: 20vw;
+  margin-bottom: 2vh;
+  margin-right: 4%;
+}
+
+.signup {
+  display: flex;
+  font-size: 5vw;
+  
+}
+
+.title-form {
+  margin-left: 5%;
+}
+
+.in-top {
+  display: flex;
+  
+}
+
+.signin {
+  font-size: 2vw;
+  padding-top: 4%;
+  margin-right: 10%;
+}
+
+/* .url-form {
+  margin-left: 5%;
+} */
+
+
+
+.top {
+  font-size: 2vw;
+  padding-top: 4%;
+  margin-left: 10%;
+}
+
+/* .category-form {
+  margin-left: 5%;
+} */
+
+.submit-form {
+  margin-bottom: 4vh;
+}
+
+.error-messages {
+  width: 24vw;
+  font-size: 1vw;
+  margin-bottom: 1vh;
+  line-height: 190%;
+  color: #aa213e;
+  font-family: Gulim;
+}
+
+.submit {
+  margin-left: 4%;
+  padding: 5% 0;
+  width: 20vw;
+  color: #ffffff;
+  background-color: #424242;
+  margin-bottom: 5vh;
+}
