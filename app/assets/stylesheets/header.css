@@ -1,0 +1,27 @@
+header {
+  height: 10vh;
+  background-color: #424242;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: Hiragino Mincho ProN;
+  font-size: 300%;
+  box-sizing: border-box;
+  text-align:center;
+  line-height: 10vh;
+}
+
+footer {
+  height: 5vh;
+  background-color: #424242;
+}
+
+p {
+  color: #ffffff;
+  font-family: Hiragino Mincho ProN;
+  font-size: 100%;
+  box-sizing: border-box;
+  text-align:center;
+  line-height: 5vh;
+}

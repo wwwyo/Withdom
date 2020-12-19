@@ -2,14 +2,12 @@ header {
   height: 10vh;
   background-color: #424242;
 }
+
 footer {
   height: 5vh;
   background-color: #424242;
 }
-* {
-  color: #424242;
-  font-family: Hiragino Mincho ProN;
-}
+
 .error {
   color: #aa213e;
   font-family: Gulim;
@@ -126,4 +124,10 @@ form {
   width: 20vw;
   color: #ffffff;
   background-color: #424242;
+}
+
+
+/* 仮の空白用です（北市） */
+.contents {
+  height: 85vh;
 }
