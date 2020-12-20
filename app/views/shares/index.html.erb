@@ -1,125 +1,119 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
-    <link rel="stylesheet" href="../../../assets/stylesheets/index.css">
-    <title>Withdom</title>
-  </head>
-  <body>
-    <header></header>
-    <div class="main">
-      <div class="head-container">
-        <div class="top-links">
-          <a href="#">Login</a>
-          <a href="#">SignUp</a>
-        </div>
-      </div>
-      <h1 class="category heading">Categories</h1>
-      <div class="category-container">
-        <div class="category-lists">
-          <a href="#" class="category-tag">ITニュース</a>
-          <a href="#" class="category-tag">プログラミング</a>
-          <a href="#" class="category-tag">デザイン</a>
-          <a href="#" class="category-tag">ビジネス</a>
-          <a href="#" class="category-tag">プレゼンテーション</a>
-          <a href="#" class="category-tag">仕事術</a>
-          <a href="#" class="category-tag">自己啓発</a>
-          <a href="#" class="category-tag">健康管理</a>
-          <a href="#" class="category-tag">メンタルケア</a>
-          <a href="#" class="category-tag">政治ニュース</a>
-          <a href="#" class="category-tag">文化・思想</a>
-          <a href="#" class="category-tag">その他</a>
-        </div>
-      </div>
-      <h1 class="index heading">All Shares</h1>          
-      <div class="share-table">
-        <!-- indexアクションの定義後に書き換える↓ -->
-        <!-- <% @shares.each do |share| %> -->
+<%# css読み込み %>
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'header' %>
+  <%= stylesheet_link_tag 'index' %>
+<% end %>
 
-          <div class="share-content">
-            <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
-              <h2>Mac版のChromeで使えるショートカットキー</h2>
-              <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
-            </a>
-            <a class="user-link", href="###">Katsuji</a>
-          </div>
-
-          <div class="share-content">
-            <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
-              <h2>Mac版のChromeで使えるショートカットキー</h2>
-              <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
-            </a>
-            <a class="user-link", href="###">Katsuji</a>
-          </div>
-
-          <div class="share-content">
-            <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
-              <h2>Mac版のChromeで使えるショートカットキー</h2>
-              <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
-            </a>
-            <a class="user-link", href="###">Katsuji</a>
-          </div>
-
-          <div class="share-content">
-            <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
-              <h2>Mac版のChromeで使えるショートカットキー</h2>
-              <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
-            </a>
-            <a class="user-link", href="###">Katsuji</a>
-          </div>
-
-          <div class="share-content">
-            <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
-              <h2>Mac版のChromeで使えるショートカットキー</h2>
-              <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
-            </a>
-            <a class="user-link", href="###">Katsuji</a>
-          </div>
-
-          <div class="share-content">
-            <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
-              <h2>Mac版のChromeで使えるショートカットキー</h2>
-              <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
-            </a>
-            <a class="user-link", href="###">Katsuji</a>
-          </div>
-
-          <div class="share-content">
-            <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
-              <h2>Mac版のChromeで使えるショートカットキー</h2>
-              <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
-            </a>
-            <a class="user-link", href="###">Katsuji</a>
-          </div>
-
-          <div class="share-content">
-            <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
-              <h2>Mac版のChromeで使えるショートカットキー</h2>
-              <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
-            </a>
-            <a class="user-link", href="###">Katsuji</a>
-          </div>
-
-          <div class="share-content">
-            <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
-              <h2>Mac版のChromeで使えるショートカットキー</h2>
-              <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
-            </a>
-            <a class="user-link", href="###">Katsuji</a>
-          </div>
-
-          <div class="share-content">
-            <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
-              <h2>Mac版のChromeで使えるショートカットキー</h2>
-              <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
-            </a>
-            <a class="user-link", href="###">Katsuji</a>
-          </div>
-
-        <!-- <% end %> -->
-      </div>
+<div class="main">
+  <div class="head-container">
+    <div class="top-links">
+      <a href="#">Login</a>
+      <a href="#">SignUp</a>
     </div>
-    <footer></footer>
-  </body>
-</html>
+  </div>
+  <h1 class="category heading">Categories</h1>
+  <div class="category-container">
+    <div class="category-lists">
+      <a href="#" class="category-tag">ITニュース</a>
+      <a href="#" class="category-tag">プログラミング</a>
+      <a href="#" class="category-tag">デザイン</a>
+      <a href="#" class="category-tag">ビジネス</a>
+      <a href="#" class="category-tag">プレゼンテーション</a>
+      <a href="#" class="category-tag">仕事術</a>
+      <a href="#" class="category-tag">自己啓発</a>
+      <a href="#" class="category-tag">健康管理</a>
+      <a href="#" class="category-tag">メンタルケア</a>
+      <a href="#" class="category-tag">政治ニュース</a>
+      <a href="#" class="category-tag">文化・思想</a>
+      <a href="#" class="category-tag">その他</a>
+    </div>
+  </div>
+  <h1 class="index heading">All Shares</h1>          
+  <div class="share-table">
+    <!-- indexアクションの定義後に書き換える↓ -->
+
+
+      <div class="share-content">
+        <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
+          <h2>Mac版のChromeで使えるショートカットキー</h2>
+          <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
+        </a>
+        <a class="user-link", href="###">Katsuji</a>
+      </div>
+
+      <div class="share-content">
+        <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
+          <h2>Mac版のChromeで使えるショートカットキー</h2>
+          <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
+        </a>
+        <a class="user-link", href="###">Katsuji</a>
+      </div>
+
+      <div class="share-content">
+        <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
+          <h2>Mac版のChromeで使えるショートカットキー</h2>
+          <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
+        </a>
+        <a class="user-link", href="###">Katsuji</a>
+      </div>
+
+      <div class="share-content">
+        <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
+          <h2>Mac版のChromeで使えるショートカットキー</h2>
+          <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
+        </a>
+        <a class="user-link", href="###">Katsuji</a>
+      </div>
+
+      <div class="share-content">
+        <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
+          <h2>Mac版のChromeで使えるショートカットキー</h2>
+          <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
+        </a>
+        <a class="user-link", href="###">Katsuji</a>
+      </div>
+
+      <div class="share-content">
+        <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
+          <h2>Mac版のChromeで使えるショートカットキー</h2>
+          <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
+        </a>
+        <a class="user-link", href="###">Katsuji</a>
+      </div>
+
+      <div class="share-content">
+        <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
+          <h2>Mac版のChromeで使えるショートカットキー</h2>
+          <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
+        </a>
+        <a class="user-link", href="###">Katsuji</a>
+      </div>
+
+      <div class="share-content">
+        <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
+          <h2>Mac版のChromeで使えるショートカットキー</h2>
+          <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
+        </a>
+        <a class="user-link", href="###">Katsuji</a>
+      </div>
+
+      <div class="share-content">
+        <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
+          <h2>Mac版のChromeで使えるショートカットキー</h2>
+          <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
+        </a>
+        <a class="user-link", href="###">Katsuji</a>
+      </div>
+
+      <div class="share-content">
+        <a class="share-link", href="https://qiita.com/fantm21/items/430a1486132c8938ae1e">
+          <h2>Mac版のChromeで使えるショートカットキー</h2>
+          <p>Chromeで使えるショートカットキーの一覧はChromeのヘルプ内で紹介されています。今回はその中からよく使うであろうと思ったショートカットキーを紹介します.</p>
+        </a>
+        <a class="user-link", href="###">Katsuji</a>
+      </div>
+
+
+  </div>
+</div>
+   
