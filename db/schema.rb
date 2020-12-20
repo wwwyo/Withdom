@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2020_12_20_021556) do
   create_table "shares", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title", null: false
     t.string "share_url", null: false
-    t.string "comment", null: false
+    t.text "comment", null: false
     t.integer "category_id", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false

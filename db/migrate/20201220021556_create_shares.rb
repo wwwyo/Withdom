@@ -3,7 +3,7 @@ class CreateShares < ActiveRecord::Migration[6.0]
     create_table :shares do |t|
       t.string :title, null: false
       t.string :share_url, null: false
-      t.string :comment, null: false
+      t.text :comment, null: false
       t.integer :category_id, null: false
       t.references :user, null: false, foreign_key: true
       t.timestamps
