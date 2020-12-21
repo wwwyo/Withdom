@@ -153,21 +153,19 @@ input {
 
 .lower {
   height: 35vh;
+  padding-top: 10vh; 
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
 }
 
 .signs {
   width: 20vw;
-  margin-bottom: 2vh;
-  margin-right: 4%;
 }
 
 .signup {
   display: flex;
   font-size: 5vw;
-  
 }
 
 
@@ -191,17 +189,27 @@ input {
 
 
 .error-messages {
-  width: 24vw;
+  width: 26vw;
   font-size: 1vw;
-  margin-bottom: 1vh;
+  text-align: center;
   line-height: 190%;
-  color: #aa213e;
-  font-family: Gulim;
 }
 
-.submit-form {
-  margin-bottom: 4vh;
+.error-contemts h2{
+  font-family: Gulim;
+  color: #aa213e;
+
 }
+
+.error-contemts li{
+  font-family: Gulim;
+  color: #aa213e;
+
+}
+
+// .submit-form {
+//   // margin-bottom: 4vh;
+// }
 
 .submit {
   margin-left: 4%;

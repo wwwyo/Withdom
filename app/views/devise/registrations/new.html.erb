@@ -55,7 +55,7 @@
         </div>
       </div>
       <div class="error-messages">
-        メールアドレスは＠を含む半角英数<br>パスワードは６文字以上の半角英数混合<br>名前を入力してください<br>メールアドレスを入力してください<br>パスワードを入力してください
+        <%= render "devise/shared/error_messages", resource: resource %>
       </div>
       <div class="submit-form">
        <%= f.submit "Sign up", class: "submit", autofocus: true %>
