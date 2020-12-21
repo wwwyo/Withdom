@@ -6,7 +6,6 @@
 
 <div class="main">
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%# <%= form_for model: @user, url:users_path, local: true do |f| %> 
     <div class="name-email">
       <div class="name">
         <img src="../../../assets/images/name.jpg" alt="名前" class="name-image">
@@ -21,7 +20,6 @@
           <div class="email-title">Email</div>
           <%= f.email_field :email, class: "email-form", placeholder: "＠マークを含む半角文字で入力してください", id: "email"%>
 
-          <%# <input type="text" class="email-form" placeholder="＠マークを含む半角文字で入力してください" name="email" id="email"> %>
         </div>
       </div>
     </div>
@@ -32,7 +30,6 @@
         <div class="password-position">
           <div class="password-title">Password</div>
           <%= f.password_field :password, class: "password-form", placeholder: "６文字以上の半角英数混合で入力してください", id: "password" %>
-          <%# <input type="text" class="password-form" placeholder="６文字以上の半角英数混合で入力してください" name="password" id="password"> %>
         </div>
       </div>
       <div class="password-comfiramation">
@@ -40,33 +37,29 @@
         <div class="password-comfiramation-position">
           <div class="password-comfiramation-title">Password confiramation</div>
           <%= f.password_field :password_confirmation,  class: "password-form", placeholder: "６文字以上の半角英数混合で入力してください", id: "password" %>
-          <%# <input type="text" class="password-form" placeholder="６文字以上の半角英数混合で入力してください" name="password" id="password"> %>
         </div>
       </div>
     </div>
 
 
-  <div class="lower">
-    <div class="signs">
-      <div class="signup">SignUp</div>
-      <div class="in-top">
-        <div class="signin">
-          <p id="session-page"><a href="#" style="text-decoration:none;">SignIn</a></p>
-        </div>
-        <div class="top">
-          <p id="pageTop"><a href="#" style="text-decoration:none;">Top</a></p>
+    <div class="lower">
+      <div class="signs">
+        <div class="signup">SignUp</div>
+        <div class="in-top">
+          <div class="signin">
+            <%= link_to "SignIn", new_user_session_path, id: "session-page" %>
+          </div>
+          <div class="top">
+            <%= link_to "Top", root_path, id: "pageTop" %>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="error-messages">
-      メールアドレスは＠を含む半角英数<br>パスワードは６文字以上の半角英数混合<br>名前を入力してください<br>メールアドレスを入力してください<br>パスワードを入力してください
-    </div>
-    <%# <form> %>
+      <div class="error-messages">
+        メールアドレスは＠を含む半角英数<br>パスワードは６文字以上の半角英数混合<br>名前を入力してください<br>メールアドレスを入力してください<br>パスワードを入力してください
+      </div>
       <div class="submit-form">
-       <%= f.submit "Sign up", class: "submit" %>
-        <%# <input class="submit" type="submit" value="SignUp"> %>
+       <%= f.submit "Sign up", class: "submit", autofocus: true %>
       </div>
-    <%# </form> %>
   <% end %>
   </div>
 </div>

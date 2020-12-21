@@ -30,10 +30,10 @@
       <div class="signin_title">SignIn</div>
       <div class="in-top">
         <div class="signin">
-          <p id="session-page"><a href="#" style="text-decoration:none;">SignUp</a></p>
+            <%= link_to "SignUp" , new_user_registration_path,　id: "session-page" %>
         </div>
         <div class="top">
-          <p id="pageTop"><a href="#" style="text-decoration:none;">Top</a></p>
+          <%= link_to "Top", root_path, id: "pageTop" %>
         </div>
       </div>
     </div>
