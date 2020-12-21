@@ -5,21 +5,23 @@
 <% end %>
 
 <div class="main">
-
-  <form>
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%# <%= form_for model: @user, url:users_path, local: true do |f| %> 
     <div class="name-email">
       <div class="name">
         <img src="../../../assets/images/name.jpg" alt="名前" class="name-image">
         <div class="name-position">
           <div class="name-title">Name</div>
-          <input type="text" class="name-form" placeholder="名前を入力してください" name="name" id="name">
+          <%= f.text_field :nickname, class: "name-form", autofocus: true, placeholder: "名前を入力してください", id: "name"%>
         </div>
       </div>
       <div class="email">
         <img src="../../../assets/images/email.jpg" alt="email" class="email-image">
         <div class="email-position">
           <div class="email-title">Email</div>
-          <input type="text" class="email-form" placeholder="＠マークを含む半角文字で入力してください" name="email" id="email">
+          <%= f.email_field :email, class: "email-form", placeholder: "＠マークを含む半角文字で入力してください", id: "email"%>
+
+          <%# <input type="text" class="email-form" placeholder="＠マークを含む半角文字で入力してください" name="email" id="email"> %>
         </div>
       </div>
     </div>
@@ -29,18 +31,20 @@
         <img src="../../../assets/images/password.jpg" alt="password" class="password-image">
         <div class="password-position">
           <div class="password-title">Password</div>
-          <input type="text" class="password-form" placeholder="６文字以上の半角英数混合で入力してください" name="password" id="password">
+          <%= f.password_field :password, class: "password-form", placeholder: "６文字以上の半角英数混合で入力してください", id: "password" %>
+          <%# <input type="text" class="password-form" placeholder="６文字以上の半角英数混合で入力してください" name="password" id="password"> %>
         </div>
       </div>
       <div class="password-comfiramation">
         <img src="../../../assets/images/password.jpg" alt="password" class="password-image">
         <div class="password-comfiramation-position">
           <div class="password-comfiramation-title">Password confiramation</div>
-          <input type="text" class="password-form" placeholder="６文字以上の半角英数混合で入力してください" name="password" id="password">
+          <%= f.password_field :password_confirmation,  class: "password-form", placeholder: "６文字以上の半角英数混合で入力してください", id: "password" %>
+          <%# <input type="text" class="password-form" placeholder="６文字以上の半角英数混合で入力してください" name="password" id="password"> %>
         </div>
       </div>
     </div>
-  </form>
+  <% end %>
 
 
   <div class="lower">
