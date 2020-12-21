@@ -9,7 +9,8 @@
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="email-password">
       <div class="email">
-        <img src="../../../assets/images/email.jpg" alt="email" class="email-image">
+        <%= image_tag "email.jpg", alt: "email", class: "email-image" %>
+        <%# <img src="../../../assets/images/email.jpg" alt="email" class="email-image"> %>
         <div class="email-position">
           <div class="email-title">Email</div>
             <%# <input type="text" class="email-form" placeholder="＠マークを含む半角文字で入力してください" name="email" id="email"> %>
@@ -17,7 +18,8 @@
         </div>
       </div>
         <div class="password">
-          <img src="../../../assets/images/password.jpg" alt="password" class="password-image">
+          <%# <img src="../../../assets/images/password.jpg" alt="password" class="password-image"> %>
+        <%= image_tag "password.jpg", alt: "password", class:"password-image" %>
           <div class="password-position">
             <div class="password-title">Password</div>
               <%# <input type="text" class="password-form" placeholder="６文字以上の半角英数混合で入力してください" name="password" id="password"> %>
