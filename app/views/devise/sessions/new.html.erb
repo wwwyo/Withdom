@@ -1,0 +1,49 @@
+<%# css読み込み %>
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'header' %>
+  <%= stylesheet_link_tag 'user/login' %>
+<% end %>
+
+<div class="main">
+
+  <form>
+    <div class="email-password">
+      <div class="email">
+        <img src="../../../assets/images/email.jpg" alt="email" class="email-image">
+        <div class="email-position">
+          <div class="email-title">Email</div>
+            <input type="text" class="email-form" placeholder="＠マークを含む半角文字で入力してください" name="email" id="email">
+        </div>
+      </div>
+        <div class="password">
+          <img src="../../../assets/images/password.jpg" alt="password" class="password-image">
+          <div class="password-position">
+            <div class="password-title">Password</div>
+              <input type="text" class="password-form" placeholder="６文字以上の半角英数混合で入力してください" name="password" id="password">
+          </div>
+        </div>
+    </div>
+  </form>
+
+  <div class="lower">
+    <div class="signs">
+      <div class="signin_title">SignIn</div>
+      <div class="in-top">
+        <div class="signin">
+          <p id="session-page"><a href="#" style="text-decoration:none;">SignUp</a></p>
+        </div>
+        <div class="top">
+          <p id="pageTop"><a href="#" style="text-decoration:none;">Top</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="error-messages">
+      メールアドレスは＠を含む半角英数<br>パスワードは６文字以上の半角英数混合<br>名前を入力してください<br>メールアドレスを入力してください<br>パスワードを入力してください
+    </div>
+    <form>
+      <div class="submit-form">
+        <input class="submit" type="submit" value="SignIn"> 
+      </div>
+    </form>
+  </div>
+</div>

@@ -33,31 +33,19 @@ bundle exec rubocop -a
 
 ### Association
 
-- has_many :categories
 - has_many :shares
 
-## categories table
-
-| Column      | Type       | Options                        |
-| ----------- | ---------- | ------------------------------ |
-| category_id | integer    | null: false                    |
-| user_id     | references | null: false, foreign_key: true |
-
-### Association
-
-- belongs_to :user
-- has_many :shares
 
 ## shares table
 
 | Column      | Type       | Options                        |
 | ----------- | ---------- | ------------------------------ |
+| title       | string     | null: false                    |
 | share_url   | string     | null: false                    |
-| text        | string     | null: false                    | 
-| user_id     | references | null: false, foreign_key: true |
-| category_id | references | null: false, foreign_key: true |
+| comment     | text       | null: false                    | 
+| category_id | integer    | null: false //active_hash      |
+| user        | references | null: false, foreign_key: true |
 
 ### Association
 
 - belongs_to :user
-- belongs_to :category

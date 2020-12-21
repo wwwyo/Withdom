@@ -5,11 +5,21 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" href="../../../assets/stylesheets/header.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= yield :css %>
   </head>
 
   <body>
+    <header>
+      <h1 class="header-title">Withdom</h1>
+    </header>
+
     <%= yield %>
+
+    <footer>
+      <p class="footer-text">Footer</p>
+    </footer>
   </body>
 </html>
