@@ -15,7 +15,7 @@
           <%= f.text_field :nickname, class: "name-form", autofocus: true, placeholder: "名前を入力してください", id: "name"%>
         </div>
       </div>
-      <div class="email">
+      <div class="email"> 
         <img src="../../../assets/images/email.jpg" alt="email" class="email-image">
         <div class="email-position">
           <div class="email-title">Email</div>
@@ -44,7 +44,6 @@
         </div>
       </div>
     </div>
-  <% end %>
 
 
   <div class="lower">
@@ -62,10 +61,12 @@
     <div class="error-messages">
       メールアドレスは＠を含む半角英数<br>パスワードは６文字以上の半角英数混合<br>名前を入力してください<br>メールアドレスを入力してください<br>パスワードを入力してください
     </div>
-    <form>
+    <%# <form> %>
       <div class="submit-form">
-        <input class="submit" type="submit" value="SignUp"> 
+       <%= f.submit "Sign up", class: "submit" %>
+        <%# <input class="submit" type="submit" value="SignUp"> %>
       </div>
-    </form>
+    <%# </form> %>
+  <% end %>
   </div>
 </div>
