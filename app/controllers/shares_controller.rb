@@ -10,7 +10,12 @@ class SharesController < ApplicationController
   end
 
   def create
-    Share.create(share_params)
+    @share = Share.create(share_params)
+    if @share.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
 
@@ -33,6 +38,6 @@ class SharesController < ApplicationController
 
   def  share_params
     params.require(:share).permit(:share_url, :title, :comment, :category_id)
-    # .merge(user_id: current_user.id)
+    .merge(user_id: current_user.id)
   end
 end

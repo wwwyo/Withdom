@@ -7,7 +7,7 @@ class Share < ApplicationRecord
   validates :category_id, presence: true
 
 
-  # belongs_to :user
+  belongs_to :user
   belongs_to :category
 
 end
