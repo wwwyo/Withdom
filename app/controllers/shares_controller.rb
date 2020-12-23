@@ -1,5 +1,6 @@
 class SharesController < ApplicationController
-  before_action :set_item, only: [:edit, :update, :destroy]
+  # before_action :set_item, only: [:edit, :update, :destroy]
+  # before_action :authenticate_user!, except: [:index]
 
   def index
   end
@@ -11,6 +12,7 @@ class SharesController < ApplicationController
   def create
     Share.create(share_params)
   end
+
 
   def edit
   end
@@ -30,5 +32,7 @@ class SharesController < ApplicationController
   end
 
   def  share_params
-    params.require(:share).permit(:share_url, :text).merge(user_id: current_user.id)
+    params.require(:share).permit(:share_url, :title, :comment, :category_id)
+    # .merge(user_id: current_user.id)
+  end
 end

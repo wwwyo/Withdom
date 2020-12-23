@@ -16,24 +16,24 @@
 
           <div class="submit-form">
             <p class="error error-messages">コメントは必須です<br>タイトルは必須です<br>URLは必須です<br>カテゴリーは必須です</p>
-            <%= f.submit "Share" class:"submit" %>
+            <%= f.submit "Share", class:"submit" %>
           </div>
           <div class="main-form">
             <div class="title">
               <label for="title">Title</label>
-              <%= f.file_field :title, class:"title-form" id:"title" %>
+              <%= f.text_field :title, class:"title-form", id:"title" %>
             </div>
             <div class="url">
               <label for="url">URL</label>
-              <%= f.file_field :share_url, class:"url-form" id:"url" %>
+              <%= f.text_field :share_url, class:"url-form", id:"url" %>
             </div>
             <div class="comment">
               <p><label for="comment">Comment</label></p>
-              <% f.text_area :comment, class:"comment-form" rows:"3" id:"comment" %>
+              <%= f.text_area :comment, class:"comment-form", rows:"3", id:"comment" %>
             </div>
             <div class="category">
               <label for="category">Category</label>
-              <%=  f.collection_select(:category_id, DeliveryTime.all, :id, :name, {}, {class:"category-form" id:"categry"}) %>
+              <%=  f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"category-form", id:"categry"}) %>
             </div>
           </div>
         <% end %>
