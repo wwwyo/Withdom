@@ -3,6 +3,8 @@ class SharesController < ApplicationController
   # before_action :authenticate_user!, except: [:index]
 
   def index
+    @categories = Category.all
+    @shares, @path_id = Share.check_path(params[:id], request.fullpath)
   end
   
   def new 
