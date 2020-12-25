@@ -1,6 +1,6 @@
 class SharesController < ApplicationController
-  # before_action :set_item, only: [:edit, :update, :destroy]
-  # before_action :authenticate_user!, except: [:index]
+  before_action :set_share, only: [:edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index]
 
   def index
     @categories = Category.all
@@ -22,19 +22,26 @@ class SharesController < ApplicationController
 
 
   def edit
+    redirect_to root_path if current_user != @share.user
   end
 
   def update
-    @share.update(share_params)
+    if @share.update(share_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
   end
 
   def destroy
-    @share.destroy
+    if current_user != @share.user || @share.destroy
+      redirect_to root_path
+    end
   end
 
 
   private
-  def set_item
+  def set_share
     @share = Share.find(params[:id])
   end
 

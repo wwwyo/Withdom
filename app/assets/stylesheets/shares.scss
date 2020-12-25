@@ -110,7 +110,6 @@ form {
 
 .error-message {
   font-size: 1.5vw;
-  list-style: circle;
   color: rgb(182, 48, 0);
 }
 
@@ -123,6 +122,21 @@ form {
   width: 20vw;
   color: #ffffff;
   background-color: #424242;
+}
+
+.or-text {
+  margin-bottom: 8vh;
+  text-align: center;
+}
+
+
+.delete-btn {
+  padding: 2vh 4vw;
+  color: #ffffff;
+  background-color: #424242;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
 }
 
 
