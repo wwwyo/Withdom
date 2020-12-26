@@ -15,7 +15,7 @@
     <%= form_with model: @share, local: true do |f| %>
 
           <div class="submit-form">
-            <p class= "or-text"><%= link_to '削除', share_path(@share.id), method: :delete, class:"delete-btn" %></p>
+            <p class= "or-text"><%= link_to 'Delete', share_path(@share.id), method: :delete, class:"delete-btn" %></p>
             <%= f.submit "Share", class:"submit" %>
           </div>
           <div class="main-form">
