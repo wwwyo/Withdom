@@ -100,17 +100,22 @@ form {
 
 .category-form {
   margin-left: 5%;
+  width: 17vw;
+  height: 4vh;
 }
 
 .submit-form {
   margin-bottom: 4vh;
 }
 
-.error-messages {
-  margin-bottom: 10%;
-  font-size: 60%;
+.error-message {
+  font-size: 1.5vw;
+  list-style: circle;
+  color: rgb(182, 48, 0);
+}
+
+.error-alert {
   margin-bottom: 4vh;
-  line-height: 190%;;
 }
 
 .submit {

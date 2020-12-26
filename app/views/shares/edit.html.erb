@@ -11,29 +11,32 @@
     </div>
   </div>
   <div class="form-container">
-    <form>
-      <div class="submit-form">
-        <p class="error error-messages">コメントは必須です<br>タイトルは必須です<br>URLは必須です<br>カテゴリーは必須です</p>
-        <input class="submit" type="submit" value="Update">
-      </div>
-      <div class="main-form">
-        <div class="title">
-          <label for="title">Title</label>
-          <input type="text" class="title-form" name="title" id="title">
-        </div>
-        <div class="url">
-          <label for="url">URL</label>
-          <input type="text" class="url-form" name="url" id="url">
-        </div>
-        <div class="comment">
-          <p><label for="comment">Comment</label></p>
-          <textarea rows="3" class="comment-form" name="comment" id="comment"></textarea>
-        </div>
-        <div class="category">
-          <label for="category">Category</label>
-          <input type="text" class="category-form" name="category" id="categry">
-        </div>
-      </div>
-    </form>
+
+    <%= form_with model: @share, local: true do |f| %>
+
+          <div class="submit-form">
+            <p class="error error-messages">コメントは必須です<br>タイトルは必須です<br>URLは必須です<br>カテゴリーは必須です</p>
+            <%= f.submit "Share", class:"submit" %>
+          </div>
+          <div class="main-form">
+            <div class="title">
+              <label for="title">Title</label>
+              <%= f.text_field :title, class:"title-form", id:"title" %>
+            </div>
+            <div class="url">
+              <label for="url">URL</label>
+              <%= f.text_field :share_url, class:"url-form", id:"url" %>
+            </div>
+            <div class="comment">
+              <p><label for="comment">Comment</label></p>
+              <%= f.text_area :comment, class:"comment-form", rows:"3", id:"comment" %>
+            </div>
+            <div class="category">
+              <label for="category">Category</label>
+              <%=  f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"category-form", id:"categry"}) %>
+            </div>
+          </div>
+        <% end %>
+
   </div>
 </div>

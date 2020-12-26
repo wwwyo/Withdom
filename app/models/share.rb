@@ -1,7 +1,14 @@
 class Share < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
-  belongs_to_active_hash :category
+  
+  validates :title,       presence: true
+  validates :share_url,   presence: true
+  validates :comment,     presence: true
+  validates :category_id, presence: true
+
+
   belongs_to :user
+  belongs_to :category
 
   private
   def self.check_path(id, path)

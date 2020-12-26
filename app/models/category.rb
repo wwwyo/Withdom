@@ -11,6 +11,9 @@ class Category < ActiveHash::Base
     {id: 9, name: 'メンタルケア'},
     {id: 10, name: '政治ニュース'},
     {id: 11, name: '文化・思想'},
-    {id: 12, name: 'その他'},
+    {id: 12, name: 'その他'}
   ]
+
+  include ActiveHash::Associations
+  has_many :shares
 end
