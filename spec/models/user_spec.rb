@@ -6,14 +6,14 @@ RSpec.describe User, type: :model do
 
   describe "ユーザー新規登録" do
     context "新規登録がうまくいくとき" do
-      it "Nickname,Email,Password,Password_confirmationが存在すれば登録できる" do
+      it "Name,Email,Password,Password_confirmationが存在すれば登録できる" do
         expect(@user).to be_valid
       end
     end
 
     context "新規登録が上手く行かないとき" do
-      it "Nicknameが空だと登録できない" do
-        @user.nickname = ""
+      it "Nameが空だと登録できない" do
+        @user.name = ""
         @user.valid?
         expect(@user.errors.full_messages).to include("Nicknameを入力してください")
       end
@@ -32,7 +32,7 @@ RSpec.describe User, type: :model do
 
   describe"その他条件" do
     it "他に同一のEmailがあると登録できない" do
-      @user = User.new(nickname: "yamada", email:"aaa@gmail.com", password:"a00000", password_confirmation:"a00000")
+      @user = User.new(name: "yamada", email:"aaa@gmail.com", password:"a00000", password_confirmation:"a00000")
       @user.save
       another_user = FactoryBot.build(:user, email: @user.email)
       another_user.valid?
