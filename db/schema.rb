@@ -10,7 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< Updated upstream
 ActiveRecord::Schema.define(version: 2020_12_20_021556) do
 
   create_table "shares", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -38,8 +37,4 @@ ActiveRecord::Schema.define(version: 2020_12_20_021556) do
   end
 
   add_foreign_key "shares", "users"
-=======
-ActiveRecord::Schema.define(version: 0) do
-
->>>>>>> Stashed changes
 end
