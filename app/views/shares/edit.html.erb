@@ -15,7 +15,7 @@
     <%= form_with model: @share, local: true do |f| %>
 
           <div class="submit-form">
-            <p class="error error-messages">コメントは必須です<br>タイトルは必須です<br>URLは必須です<br>カテゴリーは必須です</p>
+            <p class= "or-text"><%= link_to 'Delete', share_path(@share.id), method: :delete, class:"delete-btn" %></p>
             <%= f.submit "Share", class:"submit" %>
           </div>
           <div class="main-form">
