@@ -33,7 +33,7 @@
             </div>
             <div class="category">
               <label for="category">Category</label>
-              <%=  f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"category-form", id:"categry"}) %>
+              <%=  f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"category-form", id:"category"}) %>
             </div>
           </div>
         <% end %>

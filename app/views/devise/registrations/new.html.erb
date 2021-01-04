@@ -11,14 +11,14 @@
         <%= image_tag "name.jpg", alt: "name", class:"name-image" %>
         <div class="name-position">
           <div class="name-title">Name</div>
-          <%= f.text_field :nickname, class: "name-form", autofocus: true, placeholder: "名前を入力してください", id: "name"%>
+          <%= f.text_field :nickname, class: "name-form", autofocus: true, placeholder: "名前を入力してください", id: "name-title"%>
         </div>
       </div>
       <div class="email"> 
         <%= image_tag "email.jpg", alt: "email", class: "email-image" %>
         <div class="email-position">
           <div class="email-title">Email</div>
-          <%= f.email_field :email, class: "email-form", placeholder: "＠マークを含む半角文字で入力してください", id: "email"%>
+          <%= f.email_field :email, class: "email-form", placeholder: "＠マークを含む半角文字で入力してください", id: "email-title"%>
 
         </div>
       </div>
@@ -31,7 +31,7 @@
 
         <div class="password-position">
           <div class="password-title">Password</div>
-          <%= f.password_field :password, class: "password-form", placeholder: "６文字以上の半角英数混合で入力してください", id: "password" %>
+          <%= f.password_field :password, class: "password-form", placeholder: "６文字以上の半角英数混合で入力してください", id: "password-title" %>
         </div>
       </div>
       <div class="password-comfiramation">
@@ -39,7 +39,7 @@
         <%= image_tag "password.jpg", alt: "password", class:"password-image" %>
         <div class="password-comfiramation-position">
           <div class="password-comfiramation-title">Password confiramation</div>
-          <%= f.password_field :password_confirmation,  class: "password-form", placeholder: "６文字以上の半角英数混合で入力してください", id: "password" %>
+          <%= f.password_field :password_confirmation,  class: "password-form", placeholder: "６文字以上の半角英数混合で入力してください", id: "password-comfiramation-title" %>
         </div>
       </div>
     </div>
